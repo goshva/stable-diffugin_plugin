@@ -52,7 +52,7 @@ async function postJSON(data) {
         });
 
         const result = await response.json();
-        createAnchor(result) 
+        createAnchor(result["image_url"]) 
         console.log("Success:", result);
 
     } catch (error) {
