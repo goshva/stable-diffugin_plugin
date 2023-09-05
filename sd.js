@@ -1,4 +1,4 @@
-const url = 'https://httpbin.org/post'
+const url = 'http://185.20.226.74:8001'
 
 const showNumber = document.getElementById('showNumber');
 const favDialog = document.getElementById('favDialog');
