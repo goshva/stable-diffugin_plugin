@@ -1,4 +1,5 @@
-const url = 'http://185.20.226.74:8001'
+const url = '/api'
+//const url = 'http://185.20.226.74:8001'
 
 const showNumber = document.getElementById('showNumber');
 const favDialog = document.getElementById('favDialog');
@@ -35,7 +36,8 @@ source.addEventListener("copy", (event) => {
     const selection = document.getSelection();
     event.clipboardData.setData("text/plain", selection.toString().toUpperCase());
     const text = selection.toString()
-    const data = { discription: text, prompt: "" };
+console.log(text)
+    const data = {description: text};
     postJSON(data);
     event.preventDefault();
 });
